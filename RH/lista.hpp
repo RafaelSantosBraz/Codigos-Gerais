@@ -25,10 +25,10 @@ struct Lista_setor{
     
     bool remover(int p){
         if (p >= 0 && p <= size){
+            size--;
             for (int c = p; c < size; c++){
                 items[c] = items[c + 1];
             }
-            size--;
             return true;
         } else{
             return false;
