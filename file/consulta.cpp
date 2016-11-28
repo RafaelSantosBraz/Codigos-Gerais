@@ -14,9 +14,10 @@ int main(){
     while (arq.good()){
         string linha;
         getline(arq, linha);
-        cout << linha << endl;
-        vector<string> v = split(linha, ';');
-        cout << v.size() << endl;
+        //cout << linha << endl;
+        vector<string> v;
+        v = split(linha, ';');
+        //cout << v.size() << endl;
         int ini = atoi(v[1].c_str());
         int fim = atoi(v[2].c_str());
         if (cep >= ini && cep <= fim){
